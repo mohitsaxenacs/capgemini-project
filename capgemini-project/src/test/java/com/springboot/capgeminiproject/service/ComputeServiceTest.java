@@ -7,9 +7,19 @@ import org.junit.jupiter.api.Test;
 import com.springboot.capgeminiproject.model.RequestData;
 import com.springboot.capgeminiproject.model.ResponseData;
 
+/**
+ *
+ * This is the service test class which unit test ComputeService methods.
+ *
+ */
 class ComputeServiceTest {
 
 	// Positive Test
+	/**
+	 *
+	 * This method tests performComputation method. This method verify correct
+	 * result for valid input array of integers
+	 */
 	@Test
 	void testComputePositiveResult() {
 		ComputeService computeService = new ComputeServiceImpl(); // Arrange
@@ -25,6 +35,11 @@ class ComputeServiceTest {
 	}
 
 	// Negative Test
+	/**
+	 *
+	 * This method tests performComputation method. This method verify error
+	 * response when input integer array is less than 3
+	 */
 	@Test
 	void testComputeInputArraySizeBelowThree() {
 		ComputeService ComputeService = new ComputeServiceImpl(); // Arrange
@@ -41,6 +56,11 @@ class ComputeServiceTest {
 	}
 
 	// Negative Test
+	/**
+	 *
+	 * This method tests performComputation method. This method verify error
+	 * response when input integer array is null
+	 */
 	@Test
 	void testComputeNullInputArray() {
 		ComputeService ComputeService = new ComputeServiceImpl(); // Arrange
@@ -55,6 +75,11 @@ class ComputeServiceTest {
 	}
 
 	// Negative Test
+	/**
+	 *
+	 * This method tests performComputation method. This method verify error
+	 * response when input is null
+	 */
 	@Test
 	void testComputeNullRequest() {
 		ComputeService ComputeService = new ComputeServiceImpl(); // Arrange

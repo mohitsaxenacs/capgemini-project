@@ -10,8 +10,17 @@ import com.springboot.capgeminiproject.model.RequestData;
 import com.springboot.capgeminiproject.model.ResponseData;
 import com.springboot.capgeminiproject.service.ComputeService;
 
+/**
+ *
+ * This is the controller test class which unit test ComputeController methods.
+ *
+ */
 class ComputeControllerTest {
 
+	/**
+	 *
+	 * This method tests compute method.
+	 */
 	@Test
 	void testCompute() {
 		ComputeService computeServiceMock = Mockito.mock(ComputeService.class);

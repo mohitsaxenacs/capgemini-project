@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.springboot.capgeminiproject"},{"l":"com.springboot.capgeminiproject.controller"},{"l":"com.springboot.capgeminiproject.model"},{"l":"com.springboot.capgeminiproject.service"}];updateSearchResults();

@@ -9,6 +9,11 @@ import com.springboot.capgeminiproject.model.RequestData;
 import com.springboot.capgeminiproject.model.ResponseData;
 import com.springboot.capgeminiproject.service.ComputeService;
 
+/**
+ *
+ * This is the rest controller class which accepts Web API requests .
+ *
+ */
 @RestController
 public class ComputeController {
 
@@ -18,6 +23,16 @@ public class ComputeController {
 	public ComputeController(ComputeService computeService) {
 		this.computeService = computeService;
 	}
+
+	/**
+	 *
+	 * This method accepts a post request which contains JSON array of integers and
+	 * passes to the Compute Service.
+	 * 
+	 * @param JSON input array
+	 * @return JSON output
+	 *
+	 */
 
 	@PostMapping("/compute")
 	public ResponseData compute(@RequestBody RequestData reqData) {

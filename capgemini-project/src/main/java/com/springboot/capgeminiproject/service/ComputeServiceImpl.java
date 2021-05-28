@@ -8,9 +8,24 @@ import org.springframework.stereotype.Service;
 import com.springboot.capgeminiproject.model.RequestData;
 import com.springboot.capgeminiproject.model.ResponseData;
 
+/**
+ *
+ * This is the service class which performs computation on input data.
+ *
+ */
 @Service
 public class ComputeServiceImpl implements ComputeService {
 
+	/**
+	 *
+	 * This method computes the square root of the sum of squares of the 3 highest numeric
+	 * inputs.
+	 * 
+	 * @param RequestData containing array of numeric inputs
+	 * @return ResponseData having output as square root of the sum of squares of
+	 *         the 3 highest numeric inputs.
+	 *
+	 */
 	@Override
 	public ResponseData performComputation(RequestData requestData) {
 
